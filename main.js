@@ -32,3 +32,19 @@ let operator;
 const operate = (firstNumber, secondNumber, operator) => {
     add(firstNumber, secondNumber)
 }
+
+// populate display when digit button is clicked
+const lastOperationScreen = document.querySelector("#lastOperationScreen")
+const digitBtns = document.querySelectorAll("#btn");
+
+digitBtns.forEach(digitBtn => {
+  digitBtn.addEventListener("click", () => {
+    let digitValue = digitBtn.textContent
+    populateDisplay(digitValue)
+  })
+});
+
+const populateDisplay = (digit) => {
+  lastOperationScreen.textContent  += digit
+}
+
