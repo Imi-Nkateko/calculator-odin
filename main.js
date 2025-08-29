@@ -4,22 +4,31 @@
 const add = (a,b) => {
     return a + b
 }
-console.log(add(1,3))
+
 
 // subtract
 const subtract = (a, b) => {
   return a - b;
 };
-console.log(subtract(1, 3));
+
 
 // multiply
 const multiply = (a, b) => {
   return a * b;
 };
-console.log(multiply(1, 3));
+
 
 // divide
 const divide = (a, b) => {
   return a / b;
 };
-console.log(divide(9, 3));
+
+
+// Calculator operations
+let firstNumber = 0;
+let secondNumber = 0;
+let operator;
+
+const operate = (firstNumber, secondNumber, operator) => {
+    add(firstNumber, secondNumber)
+}
